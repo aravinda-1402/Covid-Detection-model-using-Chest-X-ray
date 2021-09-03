@@ -40,9 +40,9 @@ There are 2 files present. One of them is the data and the other is the metadata
 *	We then perform image data-augmentation on the train set to produce and add more images into the train set with varied orientations and other properties like zoom and brightness to improve the accuracy of the model.<br>
 
 <br>
-<b>Algorithm Used:</b> As we have to classify the data into 3 categories of outputs ‘Normal/NA’, ‘Pneumonia/NA’ and ‘Pneumonia/COVID-19’, I have chosen CNN (Convolutional Neural Network).
+<b>Algorithm Used:</b> As we have to classify the data into 3 categories of outputs ‘Normal/NA’, ‘Pneumonia/NA’ and ‘Pneumonia/COVID-19’, I have chosen CNN (Convolutional Neural Network). 
 
-As we can see from Figure 3,  we have the input shape as (256,256,3) and various Convolutional layers with a different number of filters and padding set to ‘same’. With padding set to ‘same’, the image dimension remains the same after every convolutional layer which gives the model more scope to learn features along the edges of the image. <br>
+<br>As we can see from Figure 3,  we have the input shape as (256,256,3) and various Convolutional layers with a different number of filters and padding set to ‘same’. With padding set to ‘same’, the image dimension remains the same after every convolutional layer which gives the model more scope to learn features along the edges of the image. <br>
 
 I have used L2 regularization with value 1e-4 which is a technique used for tuning the function by adding an additional penalty term in the error function. The additional term controls the excessively fluctuating function such that the coefficients don't take extreme values. We have the activation function as ReLU and we also have ‘Batch Normalization’ after every convolutional layer so that the model doesn’t overfit and it also reduces the total number of epochs to train the model.<br>   
 
