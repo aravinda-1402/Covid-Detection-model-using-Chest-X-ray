@@ -34,10 +34,14 @@ There are 2 files present. One of them is the data and the other is the metadata
 |           3         |        Pneumonia      |               Virus             |             COVID-19            |           58         |
 <br>
 <b>Data Cleaning and preparation:</b>
-*	As we can see from the data file sample, it has 2 categories in the ‘Dataset_type’ column: TRAIN and TEST. So, we separate the train and test images by filtering using the labels.
-*	Next, we fill all the places with NaN (Not a Number) with ‘NA’ string and we also append ‘Label_2_Virus_category’ column with the ‘Label’ column.
-*	We then check for all the label types like ‘Normal/NA’, ‘Pneumonia/NA’ and ‘Pneumonia/COVID-19’ in the train and test sets if they are present or not. We notice that ‘Pneumonia/COVID-19’ is not present in the test set. This is going to affect the prediction accuracy of the model. So, we take the last 600 examples of the train set and append it to the test set so that the data distribution with all the various labels is uniform and the overall model’s accuracy is good.
-*	We then perform image data-augmentation on the train set to produce and add more images into the train set with varied orientations and other properties like zoom and brightness to improve the accuracy of the model.<br>
+
+* As we can see from the data file sample, it has 2 categories in the ‘Dataset_type’ column: TRAIN and TEST. So, we separate the train and test images by filtering using the labels.
+
+* Next, we fill all the places with NaN (Not a Number) with ‘NA’ string and we also append ‘Label_2_Virus_category’ column with the ‘Label’ column.
+
+* We then check for all the label types like ‘Normal/NA’, ‘Pneumonia/NA’ and ‘Pneumonia/COVID-19’ in the train and test sets if they are present or not. We notice that ‘Pneumonia/COVID-19’ is not present in the test set. This is going to affect the prediction accuracy of the model. So, we take the last 600 examples of the train set and append it to the test set so that the data distribution with all the various labels is uniform and the overall model’s accuracy is good.
+
+* We then perform image data-augmentation on the train set to produce and add more images into the train set with varied orientations and other properties like zoom and brightness to improve the accuracy of the model.<br>
 
 <br>
 <b>Algorithm Used:</b> As we have to classify the data into 3 categories of outputs ‘Normal/NA’, ‘Pneumonia/NA’ and ‘Pneumonia/COVID-19’, I have chosen CNN (Convolutional Neural Network). 
