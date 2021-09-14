@@ -4,7 +4,7 @@
 
 <b>Problem Statement:</b> Corona - COVID19 virus affects healthy people's respiratory systems, and chest X-Ray is one of the most significant imaging modalities for detecting the virus.
 
-The objective of this project is to develop a Deep Learning Model to identify the X-Rays of healthy vs. Pneumonia (Corona) afflicted patients using the Chest X-Ray dataset, and use this model to power the AI application to test the Corona Virus in a faster phase.
+The objective of this project is to develop a Deep Learning Model to identify the X-Rays of healthy vs. Pneumonia (Corona) afflicted patients using the Chest X-Ray dataset which can be used to power AI applications to test the Corona Virus in a faster phase.
 
 <b>Dataset Used:</b> The dataset is a collection of Chest X-Ray images of people. It contains images of people who are healthy, those who are tested positive for COVID-19 or other viral and bacterial pneumonias such as SARS (Severe Acute Respiratory Syndrome), Streptococcus and ARDS (Acute Respiratory Distress Syndrome).<br>
 
