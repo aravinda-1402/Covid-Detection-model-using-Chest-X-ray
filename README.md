@@ -1,5 +1,5 @@
 # Covid-Detection-model-using-Chest-X-ray
-![covid](https://user-images.githubusercontent.com/71303848/131960499-9a9341d1-64c9-4cb6-9b5c-773dd144dedc.jpeg)
+![cov](https://user-images.githubusercontent.com/71303848/131960499-9a9341d1-64c9-4cb6-9b5c-773dd144dedc.jpeg)
 
 
 <b>Problem Statement:</b> Corona - COVID19 virus affects healthy people's respiratory systems, and chest X-Ray is one of the most significant imaging modalities for detecting the virus.
