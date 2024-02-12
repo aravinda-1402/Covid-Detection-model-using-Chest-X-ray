@@ -66,11 +66,28 @@ Figure 4 and Figure 5 represent ‘Training accuracy and validation accuracy’ 
 
 ![Training loss and validation loss](https://user-images.githubusercontent.com/71303848/131959986-c75a75de-840d-44a8-ab6a-472fd42e1e8d.PNG)
 
+
+## Deployment and User Interface
+
+The project is deployed using Flask, enabling users to upload their chest X-ray images for the model to determine if they have COVID-19 or not.
+
+### Application Screenshots
+
+#### Screenshot 1: Upload Page
+![img1.png](img1.png)
+
+#### Screenshot 2: Result Page
+![img2.png](img2.png)
+
+By integrating this model into a user-friendly web application, individuals can conveniently assess their COVID-19 status based on chest X-ray images, contributing to the rapid identification and management of the virus.
+
+
 <b>Software Packages Used:</b>
 *	Numpy 1.21.1
 *	Pandas v1.3.1
 *	Matplotlib 3.3.4
 *	TensorFlow 2.0
 *	Keras 2.3.0
+*	Flask 2.2.2
 
 <b>Industrial scope and advantage of this project:</b> Methods for detecting and classifying human illnesses from medical pictures that are automated using novel Machine Learning and Deep Learning Algorithms enable the doctor in driving the consultation in a better way, reducing the time it takes to diagnose the Corona Virus. This would also give physicians an edge and allow them to act with more confidence while they wait for the analysis of a radiologist by having a digital second opinion confirm their assessment of a patient's condition. Also, these tools can provide quantitative scores to consider and use in studies.
