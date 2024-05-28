@@ -2,12 +2,12 @@
 ![covid](https://user-images.githubusercontent.com/71303848/131960499-9a9341d1-64c9-4cb6-9b5c-773dd144dedc.jpeg)
 
 ## Problem Statement
-Corona - COVID19 virus affects healthy people's respiratory systems, and chest X-Ray is one of the most significant imaging modalities for detecting the virus.
+Corona - COVID-19 virus affects healthy people's respiratory systems, and chest X-ray is one of the most significant imaging modalities for detecting the virus.
 
-The objective of this project is to develop a Deep Learning Model to identify the X-Rays of healthy vs. Pneumonia (Corona) afflicted patients using the Chest X-Ray dataset which can be used to power AI applications to test the Corona Virus at a faster phase.
+This project aims to develop a Deep Learning Model to identify the X-rays of healthy vs. COVID-19-afflicted patients using the Chest X-ray dataset, which can be used to power AI applications to test the coronavirus at a faster phase.
 
 ## Dataset Used
-The dataset is a collection of Chest X-Ray images of people. It contains images of people who are healthy, those who are tested positive for COVID-19 or other viral and bacterial pneumonias such as SARS (Severe Acute Respiratory Syndrome), Streptococcus, and ARDS (Acute Respiratory Distress Syndrome).
+The dataset is a collection of Chest X-ray images of people. It contains images of healthy people who tested positive for COVID-19 or other viral and bacterial pneumonia such as SARS (Severe Acute Respiratory Syndrome), Streptococcus, and ARDS (Acute Respiratory Distress Syndrome).
 
 **Dataset Link:** [Kaggle - Coronahack Chest X-ray Dataset](https://www.kaggle.com/praveengovi/coronahack-chest-xraydataset)
 
@@ -34,12 +34,12 @@ There are 2 files present. One of them is the data and the other is the metadata
 ## Data Cleaning and Preparation
 
 * Separate the train and test images by filtering using the labels.
-* Fill all NaN (Not a Number) values with ‘NA’ string and append ‘Label_2_Virus_category’ column with the ‘Label’ column.
-* Ensure all label types like ‘Normal/NA’, ‘Pneumonia/NA’ and ‘Pneumonia/COVID-19’ are present in both train and test sets.
-* Perform image data augmentation on the train set to produce and add more images with varied orientations and properties like zoom and brightness to improve the model's accuracy.
+* Fill all NaN (Not a Number) values with the ‘NA’ string and append the ‘Label_2_Virus_category’ column with the ‘Label’ column.
+* Ensure all label types like ‘Normal/NA’, ‘Pneumonia/NA’, and ‘Pneumonia/COVID-19’ are present in both train and test sets.
+* To improve the model's accuracy, Perform image data augmentation on the train set to produce and add more images with varied orientations and properties like zoom and brightness.
 
 ## Algorithm Used
-As we have to classify the data into 3 categories of outputs ‘Normal/NA’, ‘Pneumonia/NA’ and ‘Pneumonia/COVID-19’, we have chosen CNN (Convolutional Neural Network).
+As we have to classify the data into 3 categories of outputs ‘Normal/NA’, ‘Pneumonia/NA’, and ‘Pneumonia/COVID-19’, we have chosen CNN (Convolutional Neural Network).
 
 ### Model Architecture
 The input shape is (256,256,3) with various Convolutional layers with different numbers of filters and padding set to ‘same’. Padding set to ‘same’ ensures the image dimensions remain unchanged after every convolutional layer, allowing the model to learn features along the edges of the image.
@@ -82,4 +82,4 @@ By integrating this model into a user-friendly web application, individuals can 
 * Flask 2.2.2
 
 ## Industrial Scope and Advantage of This Project
-Methods for detecting and classifying human illnesses from medical images using novel Machine Learning and Deep Learning Algorithms enable doctors to drive consultations more effectively, reducing the time it takes to diagnose the Coronavirus. This gives physicians an edge and allows them to act with more confidence while they wait for the radiologist's analysis. Additionally, these tools can provide quantitative scores to consider and use in studies.
+Methods for detecting and classifying human illnesses from medical images using novel Machine Learning and Deep Learning Algorithms enable doctors to drive consultations more effectively, reducing the time it takes to diagnose the Coronavirus. This gives physicians an edge and allows them to act more confidently while waiting for the radiologist's analysis. Additionally, these tools can provide quantitative scores to consider and use in studies.
